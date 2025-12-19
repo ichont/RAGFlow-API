@@ -1,4 +1,4 @@
-# 这个程序会远程在RAGflow对应聊天下创建一个会话，会话名称为***，有延迟，程序运行时RAGflow对应会话会卡，该程序无上下文增加上下文记忆请在程序中保持使用当前会话
+# 这个程序会远程在RAGflow对应聊天下创建一个会话，会话名称为***，程序运行时RAGflow对应会话会卡一会，该程序无上下文增加上下文记忆请在程序中保持使用当前会话
 import requests
 
 # 1. 配置信息 - 请替换为您的实际信息
@@ -69,4 +69,5 @@ def query_ragflow(question):
 # 4. 使用示例
 if __name__ == "__main__":
     user_question = "灭火器过期未更换"  # 您可以在这里输入任何问题
+
     result = query_ragflow(user_question)
